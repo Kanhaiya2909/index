@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git | Unix</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+        <h1>Git Command</h1>
+       <table >
+           <tr>
+            <th style="background-color: rgb(129, 129, 129);">
+                Command
+            </th>
+            <th style="background-color: rgb(129, 129, 129);">
+                Description
+            </th>
+           </tr>
+                <tr>
+                    <td>
+                        git init
+                    </td>
+                    <td>
+                        The git init command creates a new Git repository.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git status
+                    </td>
+                    <td>
+                        The git status command displays the state of the working directory and the staging area.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git add {fileName}
+                    </td>
+                    <td>
+                        Staged particular file. eg: {fileName}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git add -A
+                    </td>
+                    <td>
+                        to the staging area (All Files & Folder)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git commit -m
+                    </td>
+                    <td>
+                        captures a snapshot of the project's currently staged changes.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git checkout {particularFile}
+                    </td>
+                    <td>
+                        to copy the file. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git checkout -f
+                    </td>
+                    <td>
+                        to copy all the file.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git log
+                    </td>
+                    <td>
+                        displays all of the commits in a repository's history.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git log -p -1
+                    </td>
+                    <td>
+                        displays last commits in a repository's history in full details
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git commit -a -m
+                    </td>
+                    <td>
+                        skipping the stage area.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git rm --cached {fileName}
+                    </td>
+                    <td>
+                        To remove from staging area.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git rm -f {fileName}
+                    </td>
+                    <td>
+                        To delete that particular file.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git branch
+                    </td>
+                    <td>
+                        display all available branches
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git branch {fileName}
+                    </td>
+                    <td>
+                        create new branch 'fileName'
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git checkout {branchName}
+                    </td>
+                    <td>
+                        To update branch/ Jump to another branch
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git merge {branchName1}
+                    </td>
+                    <td>
+                        branchName1 will merge with current branch.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git checkout -b {branchName}
+                    </td>
+                    <td>
+                        Automatically creat and update the branch
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git stash
+                    </td>
+                    <td>
+                        Save changes in local memory
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git stash list
+                    </td>
+                    <td>
+                        To display all changes by stash command
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git stash apply {stash@{0}}
+                    </td>
+                    <td>
+                        To update file
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git stash drop {stash{0}}
+                    </td>
+                    <td>
+                        to delete files...
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git stash clean
+                    </td>
+                    <td>
+                        to delete all stash files.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git log --pretty=oneline
+                    </td>
+                    <td>
+                        to display id in one line
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git revert {id}
+                    </td>
+                    <td>
+                        to remove wrong commit
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        git reset --soft {id}  --> soft/hard/mixed/merge/keep
+                    </td>
+                    <td>
+                        undo
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+
+       </table>
+       <img style="width: 60%; height: 250px; margin-top: 50px; margin-bottom: 50px;" src="https://git-scm.com/book/en/v2/images/lifecycle.png" alt="">
+       <!-- ------------------------------------------------------------------------------------------------ -->
+    <hr style="height: 8px; color: rgb(73, 73, 73); background-color: rgb(83, 83, 83);">
+        <h1>Unix Command</h1>
+        <table >
+            <tr>
+             <th style="background-color: rgb(129, 129, 129);">
+                 Command
+             </th>
+             <th style="background-color: rgb(129, 129, 129);">
+                 Description
+             </th>
+            </tr>
+                 <tr>
+                     <td>
+                        ls -lart
+                     </td>
+                     <td>
+                        To sort the file names in the last modification time in reverse order.
+                     </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        touch <br>
+                        Eg:- touch index.html
+                    </td>
+                    <td>
+                        To create empty file
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        clear
+                    </td>
+                    <td>
+                        To clear
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        ls
+                    </td>
+                    <td>
+                        The ls command is used to list files.
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        pwd
+                    </td>
+                    <td>
+                        pwd command writes to standard output the full path name of your current directory (from the root directory).
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        
+                    </td>
+                 </tr>
+        </table>
+    
+       </div>
+  </div>
+</body>
+</html>
